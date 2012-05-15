@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+vmc = File.expand_path("../../vmc", __FILE__)
+vmc_ng = File.expand_path("../../vmc-ng", __FILE__)
+
+bin =
+  if File.exists?(File.expand_path("~/.vmc/use-ng"))
+    $LOAD_PATH.unshift "#{vmc_ng}/lib"
+    "#{vmc_ng}/bin/vmc"
+  else
+    "#{vmc}/bin/vmc"
+  end
+
+$0 = bin
+load bin

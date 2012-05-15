@@ -1,0 +1,6 @@
+[submodule "vmc"]
+	path = vmc
+	url = git://github.com/cloudfoundry/vmc.git
+[submodule "vmc-ng"]
+	path = vmc-ng
+	url = git://github.com/cloudfoundry/vmc.git
