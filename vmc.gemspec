@@ -17,7 +17,7 @@ end
 
 Gem::Specification.new do |s|
   s.name        = "vmc"
-  s.version     = "0.4.0.beta.1"
+  s.version     = "0.4.0.beta.2"
   s.author      = vmc.author
   s.email       = vmc.email
   s.homepage    = vmc.homepage
