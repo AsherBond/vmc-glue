@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.summary     = vmc.summary
   s.executables = %w{vmc}
 
-  s.require_paths = ["vmc/lib"]
+  s.require_paths = ["vmc-ng/lib"]
 
   s.files =
     vmc.files.collect { |f|
