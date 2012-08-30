@@ -35,7 +35,13 @@ Gem::Specification.new do |s|
 
   [vmc, vmc_ng].each do |g|
     g.dependencies.each do |dep|
-      s.add_runtime_dependency dep.name, *(dep.requirement.to_s.split(", "))
+      requirement = dep.requirement.to_s.split(", ")
+
+      if dep.type == :runtime
+        s.add_runtime_dependency dep.name, *requirement
+      elsif dep.type == :development
+        s.add_development_dependency dep.name, *requirement
+      end
     end
   end
 end
